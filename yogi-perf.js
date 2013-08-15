@@ -80,7 +80,7 @@ function executeTests (testpaths) {
         outdir = (options.outdir || false),
         refs = (options.ref || []),
         wip = (options.working === undefined ? true : options.working),
-        cmd = path.resolve(YOGI_PATH + '/node_modules/.bin/yb'),
+        cmd = path.join(__dirname, 'node_modules/.bin/yb'),
         args = [],
         rawpath;
 

@@ -14,5 +14,6 @@
     },
     "bin": {
         "yogi-perf": "yogi-perf.js"
-    }
+    },
+    "preferGlobal": "true"
 }

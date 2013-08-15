@@ -9,7 +9,8 @@
     "dependencies": {
         "win-spawn": "~1.1.1",
         "async": "~0.2.6",
-        "glob" : "~3.2.1"
+        "glob" : "~3.2.1",
+        "yui-benchmark": "http://derek.io/~/yui-benchmark-latest.php"
     },
     "bin": {
         "yogi-perf": "yogi-perf.js"

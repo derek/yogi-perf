@@ -1,7 +1,8 @@
 {
-	"name": "yogi-perf",
+    "name": "yogi-perf",
     "description": "A Yogi plugin for performance testing",
     "version": "0.0.1",
+    "author": "Derek Gathright <drgath@yahoo.com>",
     "repository": {
         "type":"git",
         "url":"http://github.com/derek/yogi-perf.git"
@@ -15,5 +16,14 @@
     "bin": {
         "yogi-perf": "yogi-perf.js"
     },
-    "preferGlobal": "true"
+    "preferGlobal": "true",
+    "bugs": {
+        "url" : "http://github.com/derek/yogi-perf/issues"
+    },
+    "licenses":[
+        {
+            "type" : "BSD",
+            "url" : "https://github.com/derek/yogi-perf/blob/master/LICENSE"
+        }
+    ],
 }

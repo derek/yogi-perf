@@ -25,7 +25,13 @@ var path = require('path'),
     util = require(path.join(YOGI_PATH, 'lib/util')),
     log = require(path.join(YOGI_PATH, 'lib/log')),
     git = require(path.join(YOGI_PATH, 'lib/git')),
-    options = args.parse();
+    options;
+
+// Add some additional arguments to the known options
+args.known.ref = [String, Array];
+args.known.working = Boolean;
+
+options = args.parse();
 
 config.init(options);
 

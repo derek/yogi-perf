@@ -30,6 +30,7 @@ var path = require('path'),
 // Add some additional arguments to the known options
 args.known.ref = [String, Array];
 args.known.working = Boolean;
+args.known.autoexecute = Boolean;
 
 options = args.parse();
 

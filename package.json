@@ -1,7 +1,7 @@
 {
     "name": "yogi-perf",
     "description": "A Yogi plugin for performance testing",
-    "version": "0.0.1-pre",
+    "version": "0.0.2-pre",
     "author": "Derek Gathright <drgath@yahoo.com>",
     "repository": {
         "type":"git",

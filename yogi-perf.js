@@ -6,6 +6,7 @@ Code licensed under the BSD License:
 http://yuilibrary.com/license/
 */
 
+/*jshint latedef: false */
 /*jshint maxlen: 300 */
 var YOGI_PATH = process.env.YOGI_PATH;
 
@@ -14,17 +15,15 @@ if (!YOGI_PATH) {
     process.exit(1);
 }
 
-var path = require('path'),
+var async = require('async'),
+    glob = require('glob'),
     spawn = require('win-spawn'),
     path = require('path'),
-    async = require('async'),
-    glob = require('glob'),
     args = require(path.join(YOGI_PATH, 'lib/args')),
-    log = require(path.join(YOGI_PATH, 'lib/log')),
     config = require(path.join(YOGI_PATH, 'lib/config')),
-    util = require(path.join(YOGI_PATH, 'lib/util')),
-    log = require(path.join(YOGI_PATH, 'lib/log')),
     git = require(path.join(YOGI_PATH, 'lib/git')),
+    log = require(path.join(YOGI_PATH, 'lib/log')),
+    util = require(path.join(YOGI_PATH, 'lib/util')),
     options;
 
 // Add some additional arguments to the known options

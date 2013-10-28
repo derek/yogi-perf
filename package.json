@@ -1,17 +1,17 @@
 {
     "name": "yogi-perf",
     "description": "A Yogi plugin for performance testing",
-    "version": "0.0.1",
+    "version": "0.0.1-pre",
     "author": "Derek Gathright <drgath@yahoo.com>",
     "repository": {
         "type":"git",
         "url":"http://github.com/derek/yogi-perf.git"
     },
     "dependencies": {
-        "win-spawn": "~1.1.1",
         "async": "~0.2.6",
         "glob" : "~3.2.1",
-        "yui-benchmark": "http://derek.io/~/yui-benchmark-latest.php"
+        "win-spawn": "~1.1.1",
+        "yui-benchmark": "https://github.com/derek/yui-benchmark/tarball/master"
     },
     "bin": {
         "yogi-perf": "yogi-perf.js"
